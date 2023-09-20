@@ -1,0 +1,36 @@
+﻿<Window x:Class="Dolgozat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dolgozat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+      
+            <Button x:Name="btnBetolt" Grid.Row="0" Content="Betöltés" Height="50" Click="btnBetolt_Click"></Button>
+            <Button x:Name="btnSzamol" Grid.Column="1" Content="Megszámol" Height="50" Click="btnSzamol_Click"></Button>
+            <Button x:Name="btnAzonosito" Grid.Column="2" Content="Azonosító" Height="50" Click="btnAzonosito_Click"></Button>
+            <Button x:Name="btnFizetesek" Grid.Column="3" Content="Fizetési módok" Height="50" Click="btnFizetesek_Click"></Button>
+            <Button x:Name="btnTavolsag" Grid.Column="4" Height="50" Content="Távolság" Click="btnTavolsag_Click"></Button>
+        <Button x:Name="btnLeghosszabbFuvar" Content="Leghosszabb Fuvar" Grid.Column="5" Height="50" Click="btnLeghosszabbFuvar_Click"></Button>
+            <ListBox x:Name="lbBetoltottAdatok" Grid.Row="1" Grid.RowSpan="2" Background="AliceBlue" Grid.ColumnSpan="2"></ListBox>
+        <ListBox x:Name="lbBetoltottFizetesek" Grid.Row="1" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" Background="AliceBlue"></ListBox>
+            <TextBox x:Name="tbBekeres" Grid.Row="3" Grid.ColumnSpan="2" Foreground="red" Background="Aquamarine" Height="70" Width="200" ></TextBox>
+    
+    </Grid>
+</Window>
